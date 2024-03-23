@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.inputArea {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: -27px;
+}
+
+.inputArea input[type="text"] {
+  height: 54px;
+  width: 100%;
+  max-width: 638px;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid var(--gray-700);
+  background: var(--gray-500);
+  color: var(--gray-100);
+  font-size: 1.6rem;
+}
+
+.inputArea input[type="text"]::placeholder {
+  color: var(--gray-300);
+}
+
+.inputArea button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 90px;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  height: 52px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.inputArea button:hover {
+  background: var(--blue);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4rem;
+
+  padding: 0 3rem;
+  margin-top: 6.4rem;
+}
+
+.content .contentHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.content .contentHeader > span:first-child {
+  color: var(--blue);
+}
+
+.content .contentHeader > span:nth-child(2) {
+  color: var(--purple);
+}
+
+.content .contentHeader > span span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 2px 8px;
+  border-radius: 25px;
+  margin-left: 8px;
+}
+
+.containerTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  color: var(--gray-300);
+  margin-top: 2.4rem;
+
+  border-top: 1px solid var(--gray-400);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.containerTasks .contentTask {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+
+.containerTasks img {
+  margin-top: 6.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.containerTasks div {
+  text-align: center;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .content {
+    padding: 0;
+  }
+}
