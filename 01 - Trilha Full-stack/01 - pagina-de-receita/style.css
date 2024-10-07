@@ -10,7 +10,8 @@
 
 body {
   background-image: url(./assets/bg-image.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #page {
