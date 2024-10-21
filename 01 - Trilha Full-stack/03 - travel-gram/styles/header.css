@@ -46,3 +46,44 @@ header .container {
   align-items: center;
   gap: 8px;
 }
+
+
+@media screen and (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  header #profile img{
+    width: 40%;
+    height: 40%;
+  }
+
+  header #profile h1{
+    font-size: 28px;
+  }
+  
+  header #profile p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    -webkit-box-orient: vertical; 
+  }
+
+  #info {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #info li {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical; 
+  }
+
+  main .container {
+    justify-content: center;
+    background-color: red;
+  }
+}
