@@ -1,0 +1,13 @@
+
+.subtitle {
+  font: var(--subtitle);
+}
+
+.text-sm {
+  font: var(--text-sm);
+} 
+
+.text-md {
+  font: var(--text-md);
+  color: var(--gray-500);
+}
