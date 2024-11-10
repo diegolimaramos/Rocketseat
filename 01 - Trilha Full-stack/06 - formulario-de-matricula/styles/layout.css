@@ -29,7 +29,7 @@ main {
 }
 
 aside {
-  background-color: var(--sufrace-secondary);
+  background-color: var(--surface-secondary);
   padding: 4rem;
 
   & .aside-container {
