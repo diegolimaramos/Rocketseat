@@ -1,0 +1,85 @@
+@import url(fields/index.css);
+
+form {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 3rem;
+}
+
+legend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--text-heading);
+  font-weight: bold;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  svg path {
+    fill: var(--input-placeholder);
+  }
+}
+
+.input-wrapper { 
+  margin-bottom: 1rem;
+}
+
+.input-default {
+  all: unset;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 8px;
+  width: 100%;
+  padding: .8rem 1rem;
+  box-sizing: border-box;
+
+
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
+
+  &:focus {
+    border-color: var(--brand-mid);
+  }
+
+  &:invalid {
+    border-color: var(--danger);
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}
+
+label {
+  display: block;
+  color: var(--text-body);
+  font: var(--body-sm);
+  margin-bottom: 12px;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+
+  font: var(--body-xs);
+  color: var(--danger);
+  margin-top: .5rem;
+
+  
+  img {
+    height: 16px;
+    width: 16px;
+  }
+}
+

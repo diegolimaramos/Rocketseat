@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-light: #59B2FF;
+  --brand-mid: #3487CF;
+  --brand-dark: #1D6FB6;
+
+  --purple: #B259FF;
+  --fuschia: #FF59F9;
+  --pink: #FF598B;
+  --orange: #FF8B59;
+  --yellow: #FFCD59;
+  --lime: #E1FF59;
+  --green: #59FF91;
+  --cyan: #59FFF9;
+  --navy: #6A59FF;
+
+  --danger: #FF5959;
+
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
+
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+  --shape-hover: #383D42;
+
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+
+  --font-leckerli-one: "Leckerli One", serif;
+  --font-logo: 2.5rem var(--font-leckerli-one);
+  
+  --font-baloo-two: "Baloo 2", serif;
+  --heading-md: bold 1.75rem var(--font-baloo-two);
+  --heading-sm: bold 1.125rem var(--font-baloo-two);
+  
+  --font-open-sans: "Open Sans", serif;
+  --body-md: 1rem var(--font-open-sans);
+  --body-sm: .875rem var(--font-open-sans);
+  --body-xs: .75rem var(--font-open-sans);
+}
+
+body {
+  background-color: var(--shape-background);
+  color: var(--text-body);
+  font-family: var(--font-open-sans);
+
+  padding: 0 1.25rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="datetime-local"],
+input[type="tel"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"],
+textarea {
+  cursor: pointer;
+} 
+
+.container-theme {
+  margin: 1.75rem 0;
+}

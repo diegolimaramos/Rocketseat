@@ -1,0 +1,102 @@
+.input-wrapper .area-toggle {
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+
+  position: relative;
+
+  span::after {
+    content: "Escuro";
+    position: absolute;
+    top: 5px;
+  }
+}
+
+.switch { 
+  position : relative ;
+  display : inline-block;
+  width: 64px;
+  height: 32px;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 20px;
+  margin: 0 0 !important;
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--input-stroke);
+  top: 3px; 
+  left: 2px;
+  right: 3px;
+  transition: all 0.3s;
+}
+
+.checkbox:checked + .switch::after {
+  background-color: var(--text-heading);
+  left : 36px; 
+}
+
+.checkbox:checked + .switch {
+  background-color: var(--brand-light);
+}
+
+.checkbox:checked ~ span::after {
+  content: "Claro";
+  position: absolute;
+}
+
+.checkbox { 
+  display : none;
+}
+
+
+.terms-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--input-stroke);
+
+  div {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 4px;
+
+    position: relative;
+
+    strong {
+      color: var(--brand-light);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+      all: unset;
+
+      height: 20px;
+      width: 20px;
+      background-color: var(--input-base);
+      border: 1px solid var(--input-stroke);
+      border-radius: 4px;
+      cursor: pointer;
+      
+      &:checked {
+        border: 1px solid var(--brand-light);
+
+        &::after {
+          content: '\2713';
+          color: var(--brand-light);
+          position: absolute;
+          left: 5px;
+          bottom: 9px;
+        }
+      }
+    }
+  }
+}

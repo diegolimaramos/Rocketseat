@@ -1,0 +1,13 @@
+input[type="file"]::-webkit-file-upload-button {
+  background: var(--shape-button);
+  border: none;
+  color: var(--text-heading);
+  border-radius: 8px;
+  padding: 4px 12px;
+  height: 2.5rem;
+  cursor: pointer;;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background: var(--shape-hover);
+}

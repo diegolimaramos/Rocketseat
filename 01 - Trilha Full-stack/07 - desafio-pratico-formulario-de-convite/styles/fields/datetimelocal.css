@@ -1,0 +1,22 @@
+input[type="datetime-local"] {
+  position: relative;
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  &:after {
+    content: '';
+    background: url('../../assets/icons/calendar.svg');
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 0;
+  }
+}
