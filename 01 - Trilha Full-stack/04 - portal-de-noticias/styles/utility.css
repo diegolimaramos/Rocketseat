@@ -34,3 +34,7 @@
 .text-sm {
   font: var(--text-sm);
 }
+
+.desktop-only {
+  display: none;
+}
