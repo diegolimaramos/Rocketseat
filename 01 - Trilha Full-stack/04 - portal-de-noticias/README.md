@@ -4,7 +4,7 @@
 
 
 <p align="center">
-Projeto de uma landing page de portfólio dev, desenvolvido durante as aulas sobre HTML e CSS.
+Projeto de uma landing page de portal de notícias, desenvolvido durante as aulas sobre HTML e CSS.
 </p>
 
 <p align="center">
@@ -32,5 +32,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Projeto
 
-O projeto é um site desktop de portfólio para desenvolvedores, com links para projetos e contato do profissional. 
-Esse é um dos desafios práticos da formação Fullstack, um dos conteúdos disponíveis para alunos da Rocketseat. 
+Nesse projeto você vai desenvolver a homepage de um portal de notícias sobre tecnologia para ser visualizado em um desktop.
+Esse é um dos projetos desenvolvidos em aula na formação Full-Stack, um de nossos conteúdos de especialização.
