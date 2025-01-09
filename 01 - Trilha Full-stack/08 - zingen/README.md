@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Logo - Rocketseat" src="https://github.com/rocketseat-education/lp-de-produto/blob/main/.github/logo-rocketseat.png" width="200px" />
+  <img alt="Logo - Rocketseat" src="./assets/logo-rocketseat.png" width="200px" />
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@ Projeto de uma landing page de produto desenvolvido durante as aulas sobre Respo
 <br>
 
 <p align="center">
-  <img alt="Preview do projeto desenvolvido." src="preview.png" width="100%">
+  <img alt="Preview do projeto desenvolvido." src="./assets/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
