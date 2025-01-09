@@ -4,7 +4,7 @@
 
 
 <p align="center">
-Projeto de uma landing page de formulário de convite, desenvolvido durante as aulas sobre HTML e CSS.
+Projeto de uma landing page de formulário de matrícula, desenvolvido durante as aulas sobre HTML e CSS.
 </p>
 
 <p align="center">
@@ -32,5 +32,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Projeto
 
-O projeto é um site desktop de convite para evento com formulário para geração do convite personalizado.
-Esse é um desafio prático da formação Full-Stack, um dos conteúdos disponíveis para alunos da Rocketseat. 
+Nesse projeto você vai desenvolver um formulário desktop para uma escola de educação infantil. 
+Esse é um dos projetos desenvolvidos em aula na formação Full-stack, um de nossos conteúdos de especialização.
