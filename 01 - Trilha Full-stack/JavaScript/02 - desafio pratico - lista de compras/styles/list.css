@@ -1,0 +1,39 @@
+ul {
+  width: 100%;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-secondary);
+    border-radius: 12px;
+    height: 49px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    
+    div {
+      display: flex;
+      gap: 12px;
+
+      input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        border-radius: 6px;
+
+        &:checked {
+          accent-color: var(--color-brand);
+        }
+
+      }
+
+      span {
+        font: var(--paragraph);
+        color: var(--content-secondary);
+      }
+
+    }
+    img {
+      width: 20px;
+    }
+  }
+}
