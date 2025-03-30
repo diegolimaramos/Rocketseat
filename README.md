@@ -6,7 +6,7 @@ Landing page com os projetos da trilha FullStack. Clique na imagem abaixo para v
 
 <p align="center">
   <a href="https://diegolimaramos.github.io/Rocketseat/" target="_blank"> 
-    <img alt="Preview do projeto desenvolvido." src="./preview.png" width="100%">
+    <img alt="Preview do projeto desenvolvido." src="./assets/preview.png" width="100%">
   </a>
 </p>
 
