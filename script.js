@@ -84,8 +84,8 @@ const projects = [
   {
     "id": 11,
     "name": "Reembolso",
-    "preview": "./01 - Trilha Full-stack/JavaScript/03 - refund-template/index.html",
-    "img": "./01 - Trilha Full-stack/JavaScript/03 - refund-template/assets/preview.png",
+    "preview": "./01 - Trilha Full-stack/JavaScript/03 - Reembolso/index.html",
+    "img": "./01 - Trilha Full-stack/JavaScript/03 - Reembolso/assets/preview.png",
     "stacks": ["html", "css", "javascript"],
     "inProgress": true
   },
