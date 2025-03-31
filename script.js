@@ -7,7 +7,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/01 - pagina-de-receita/index.html",
     "img": "./01 - Trilha Full-stack/html/01 - pagina-de-receita/assets/preview.png",
     "stacks": ["html"],
-    "inProgress": true
+    "inProgress": false
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/02 - desafio-pratico-local-turistico/index.html",
     "img": "./01 - Trilha Full-stack/html/02 - desafio-pratico-local-turistico/assets/preview.png",
     "stacks": ["html", "css"],
-    "inProgress": true
+    "inProgress": false
   },
   {
     "id": 3,
@@ -23,7 +23,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/03 - travel-gram/index.html",
     "img": "./01 - Trilha Full-stack/html/03 - travel-gram/assets/preview.png",
     "stacks": ["html", "css"],
-    "inProgress": true
+    "inProgress": false
   },
   {
     "id": 4,
@@ -31,7 +31,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/04 - portal-de-noticias/index.html",
     "img": "./01 - Trilha Full-stack/html/04 - portal-de-noticias/assets/preview.png",
     "stacks": ["html", "css"],
-    "inProgress": true
+    "inProgress": false
   },
   {
     "id": 5,
@@ -39,7 +39,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/05 - desafio-pratico-portfolio-dev/index.html",
     "img": "./01 - Trilha Full-stack/html/05 - desafio-pratico-portfolio-dev/assets/preview.png",
     "stacks": ["html", "css"],
-    "inProgress": true
+    "inProgress": false
   },
   {
     "id": 6,
@@ -47,7 +47,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/06 - formulario-de-matricula/index.html",
     "img": "./01 - Trilha Full-stack/html/06 - formulario-de-matricula/assets/preview.png",
     "stacks": ["html", "css"],
-    "inProgress": true
+    "inProgress": false
   },
   {
     "id": 7,
@@ -55,7 +55,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/07 - desafio-pratico-formulario-de-convite/index.html",
     "img": "./01 - Trilha Full-stack/html/07 - desafio-pratico-formulario-de-convite/assets/preview.png",
     "stacks": ["html", "css"],
-    "inProgress": true
+    "inProgress": false
   },
   {
     "id": 8,
@@ -63,7 +63,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/08 - zingen/index.html",
     "img": "./01 - Trilha Full-stack/html/08 - zingen/assets/preview.png",
     "stacks": ["html", "css"],
-    "inProgress": true
+    "inProgress": false
   },
   {
     "id": 9,
@@ -71,7 +71,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/JavaScript/01 - convert-template/index.html",
     "img": "./01 - Trilha Full-stack/JavaScript/01 - convert-template/assets/preview.png",
     "stacks": ["html", "css", "javascript"],
-    "inProgress": true
+    "inProgress": false
   },
   {
     "id": 10,
@@ -79,13 +79,21 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/JavaScript/02 - desafio pratico - lista de compras/index.html",
     "img": "./01 - Trilha Full-stack/JavaScript/02 - desafio pratico - lista de compras/assets/preview.png",
     "stacks": ["html", "css", "javascript"],
-    "inProgress": true
+    "inProgress": false
   },
   {
     "id": 11,
     "name": "Reembolso",
-    "preview": "./01 - Trilha Full-stack/JavaScript/03 - Reembolso/index.html",
-    "img": "./01 - Trilha Full-stack/JavaScript/03 - Reembolso/assets/preview.png",
+    "preview": "./01 - Trilha Full-stack/JavaScript/03 - reembolso/index.html",
+    "img": "./01 - Trilha Full-stack/JavaScript/03 - reembolso/assets/preview.png",
+    "stacks": ["html", "css", "javascript"],
+    "inProgress": false
+  },
+  {
+    "id": 12,
+    "name": "Sorteador de números",
+    "preview": "./01 - Trilha Full-stack/JavaScript/04 - desafio pratico - sorteador de numeros/index.html",
+    "img": "./01 - Trilha Full-stack/JavaScript/04 - desafio pratico - sorteador de numeros/assets/preview.png",
     "stacks": ["html", "css", "javascript"],
     "inProgress": true
   },
@@ -100,7 +108,7 @@ function createCard(projects) {
       <span class="icons">
         ${project.stacks.map(stack => `<img src="./assets/icons/${stack}.svg" alt="${stack}" />`).join("")}
       </span>
-      <span class="status ${project.inProgress ? "complete": "in-progress"}">${project.inProgress ? "Completo" : "Em andamento"}</span>
+      <span class="status ${project.inProgress ? "in-progress": "complete"}">${project.inProgress ? "Em andamento" : "Completo"}</span>
       <span>${project.name}</span>
     </a>
     `;
