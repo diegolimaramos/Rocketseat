@@ -86,15 +86,21 @@ a {
     &:hover {
       background-color: #8234E9;
 
-      .status.complete {
+      .complete {
         display: block;
         background-color:  #0D4722;
         color: #FFF;
       }
       
-      .status.in-progress {
+      .inProgress {
         display: block;
         background-color: yellow;
+      }
+
+      .stoped {
+        display: block;
+        background-color: red;
+        color: #FFF;
       }
 
       .icons {
