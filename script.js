@@ -117,27 +117,29 @@ const projects = [
 
 
 function createCard(projects) {
-
-  const projectsStatus = {
-    "inProgress": "Em andamento",
-    "complete": "Completo",
+  try {
+    const projectsStatus = {
+      "inProgress": "Em andamento",
+      "complete": "Completo",
     "stoped": "Parado",
   };
   
-
   projects.forEach(project => {
     cards.innerHTML += `
     <a class="card ${project.status}" href="${project.preview}" target="_blank">
-      <img src="${project.img}" alt="${project.name}" />
-      <span class="icons">
-        ${project.stacks.map(stack => `<img src="./assets/icons/${stack}.svg" alt="${stack}" />`).join("")}
-      </span>
+    <img src="${project.img}" alt="${project.name}" />
+    <span class="icons">
+    ${project.stacks.map(stack => `<img src="./assets/icons/${stack}.svg" alt="${stack}" />`).join("")}
+    </span>
       <span class="status ${project.projectStatus}">${projectsStatus[project.projectStatus]}</span>
       <span>${project.name}</span>
-    </a>
-    `;
-  });
-  
+      </a>
+      `;
+    });
+    
+  } catch (error) {
+    console.log(error);
+    alert("Não foi possível carregar os projetos.");
+  }
 }
-
-createCard(projects);
+  createCard(projects);

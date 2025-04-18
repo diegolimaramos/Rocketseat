@@ -16,6 +16,7 @@ Para os projetos da tilha, foram utilizados as seguintes tecnologias:
 
 - HTML
 - CSS (Flex e Grid)
+- JavaScript
 
 ## Projeto
 
