@@ -7,7 +7,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/01 - pagina-de-receita/index.html",
     "img": "./01 - Trilha Full-stack/html/01 - pagina-de-receita/assets/preview.png",
     "stacks": ["html"],
-    "projectStatus": "complete"
+    "projectStatus": "complete",
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/02 - desafio-pratico-local-turistico/index.html",
     "img": "./01 - Trilha Full-stack/html/02 - desafio-pratico-local-turistico/assets/preview.png",
     "stacks": ["html", "css"],
-    "projectStatus": "complete"
+    "projectStatus": "complete",
   },
   {
     "id": 3,
@@ -23,7 +23,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/03 - travel-gram/index.html",
     "img": "./01 - Trilha Full-stack/html/03 - travel-gram/assets/preview.png",
     "stacks": ["html", "css"],
-    "projectStatus": "complete"
+    "projectStatus": "complete",
   },
   {
     "id": 4,
@@ -31,7 +31,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/04 - portal-de-noticias/index.html",
     "img": "./01 - Trilha Full-stack/html/04 - portal-de-noticias/assets/preview.png",
     "stacks": ["html", "css"],
-    "projectStatus": "complete"
+    "projectStatus": "complete",
   },
   {
     "id": 5,
@@ -39,7 +39,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/05 - desafio-pratico-portfolio-dev/index.html",
     "img": "./01 - Trilha Full-stack/html/05 - desafio-pratico-portfolio-dev/assets/preview.png",
     "stacks": ["html", "css"],
-    "projectStatus": "complete"
+    "projectStatus": "complete",
   },
   {
     "id": 6,
@@ -47,7 +47,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/06 - formulario-de-matricula/index.html",
     "img": "./01 - Trilha Full-stack/html/06 - formulario-de-matricula/assets/preview.png",
     "stacks": ["html", "css"],
-    "projectStatus": "complete"
+    "projectStatus": "complete",
   },
   {
     "id": 7,
@@ -55,7 +55,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/07 - desafio-pratico-formulario-de-convite/index.html",
     "img": "./01 - Trilha Full-stack/html/07 - desafio-pratico-formulario-de-convite/assets/preview.png",
     "stacks": ["html", "css"],
-    "projectStatus": "complete"
+    "projectStatus": "complete",
   },
   {
     "id": 8,
@@ -63,7 +63,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/html/08 - zingen/index.html",
     "img": "./01 - Trilha Full-stack/html/08 - zingen/assets/preview.png",
     "stacks": ["html", "css"],
-    "projectStatus": "complete"
+    "projectStatus": "complete",
   },
   {
     "id": 9,
@@ -71,7 +71,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/JavaScript/01 - convert-template/index.html",
     "img": "./01 - Trilha Full-stack/JavaScript/01 - convert-template/assets/preview.png",
     "stacks": ["html", "css", "javascript"],
-    "projectStatus": "complete"
+    "projectStatus": "complete",
   },
   {
     "id": 10,
@@ -79,7 +79,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/JavaScript/02 - desafio pratico - lista de compras/index.html",
     "img": "./01 - Trilha Full-stack/JavaScript/02 - desafio pratico - lista de compras/assets/preview.png",
     "stacks": ["html", "css", "javascript"],
-    "projectStatus": "complete"
+    "projectStatus": "complete",
   },
   {
     "id": 11,
@@ -87,7 +87,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/JavaScript/03 - reembolso/index.html",
     "img": "./01 - Trilha Full-stack/JavaScript/03 - reembolso/assets/preview.png",
     "stacks": ["html", "css", "javascript"],
-    "projectStatus": "complete"
+    "projectStatus": "complete",
   },
   {
     "id": 12,
@@ -95,7 +95,23 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/JavaScript/04 - desafio pratico - sorteador de numeros/index.html",
     "img": "./01 - Trilha Full-stack/JavaScript/04 - desafio pratico - sorteador de numeros/assets/preview.png",
     "stacks": ["html", "css", "javascript"],
-    "projectStatus": "stoped"
+    "projectStatus": "stoped",
+  },
+  {
+    "id": 13,
+    "name": "Agendamento de atendimento",
+    "preview": "./01 - Trilha Full-stack/JavaScript/06 - hairday/index.html",
+    "img": "./01 - Trilha Full-stack/JavaScript/06 - hairday/src/assets/preview.png",
+    "stacks": ["html", "css", "javascript"],
+    "projectStatus": "complete",
+  },
+  {
+    "id": 14,
+    "name": "Agendamento petshop",
+    "preview": "./01 - Trilha Full-stack/JavaScript/07 - petshop/index.html",
+    "img": "./01 - Trilha Full-stack/JavaScript/07 - petshop/src/assets/preview.png",
+    "stacks": ["html", "css", "javascript"],
+    "projectStatus": "inProgress",
   },
 ]
 
