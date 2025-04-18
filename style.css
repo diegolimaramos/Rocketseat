@@ -108,6 +108,12 @@ a {
       }
     }
   }
+
+  .card.inProgress, 
+  .card.stoped {
+    pointer-events: none;
+    filter: saturate(0%);
+  }
 }
 
 footer {

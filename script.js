@@ -126,7 +126,7 @@ function createCard(projects) {
   
   projects.forEach(project => {
     cards.innerHTML += `
-    <a class="card ${project.status}" href="${project.preview}" target="_blank">
+    <a class="card ${project.projectStatus}" href="${project.preview}" target="_blank">
     <img src="${project.img}" alt="${project.name}" />
     <span class="icons">
     ${project.stacks.map(stack => `<img src="./assets/icons/${stack}.svg" alt="${stack}" />`).join("")}
