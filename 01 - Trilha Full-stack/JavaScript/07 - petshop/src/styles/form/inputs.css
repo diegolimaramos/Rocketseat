@@ -1,0 +1,52 @@
+input,
+textarea {
+  background-color: transparent;
+  border: 1px solid var(--border-primary);
+  font: var(--placeholder);
+  color: var(--content-primary);
+  outline: none;
+  resize: none;
+
+  &:hover {
+    border: 1px solid var(--border-secondary);
+  }
+
+  &:focus {
+    border: 1px solid var(--border-brand);
+    color: var(--content-primary);
+  }
+}
+
+input[type="text"] {
+  height: 48px;
+  width: 100%;
+  padding: 10px 40px;
+  border-radius: 8px;
+}
+
+input[type="date"],
+input[type="time"] {
+  height: 48px;
+  width: 190px;
+  padding: 12px 12px 12px 40px;
+  border-radius: 8px;
+  color: var(--content-secondary);
+
+  &::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    background: url("../../assets/icons/arrow-down.svg") no-repeat;
+  }
+
+  &:focus {
+    color: var(--content-primary);
+  }
+}
+
+textarea {
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 12px;
+  font: var(--placeholder);
+  color: var(--content-primary);
+  height: 83px;
+}

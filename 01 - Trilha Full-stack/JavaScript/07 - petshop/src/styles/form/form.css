@@ -1,0 +1,47 @@
+@import url(inputs.css);
+@import url(buttons.css);
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #23242C;
+  max-width: 480px;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+form p {
+  margin-bottom: 28px;
+}
+       
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  font: var(--label-medium);
+  color: var(--content-primary);
+  margin-bottom: 4px;
+}
+
+.area-input {
+  position: relative;
+  height: 48px;
+  display: flex;
+  align-items: center;
+      
+  img {
+    position: absolute;
+    left: 12px;
+    height: 20px;
+    width: 20px;
+  }
+}
+    
+.area-input-date-time {
+  display: flex;
+  justify-content: space-between;
+}
+  
