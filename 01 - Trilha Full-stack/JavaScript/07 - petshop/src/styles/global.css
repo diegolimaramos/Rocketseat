@@ -60,8 +60,6 @@ p {
   margin: 0 auto;
   max-width: 1000px;
   padding: 25px;
-
-  position: relative;
 }
 
 .container-modal {
@@ -74,8 +72,13 @@ p {
   position: absolute;
   top: 0;
   display: none;
+  z-index: 1;
 }
 
 .filter-blur {
-  filter: blur(4px);
+  filter: blur(8px);
+}
+
+.inline-flex {
+  display: inline-flex;
 }

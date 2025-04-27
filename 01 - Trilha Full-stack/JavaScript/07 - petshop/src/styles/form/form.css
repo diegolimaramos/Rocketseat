@@ -8,6 +8,16 @@ form {
   max-width: 480px;
   border-radius: 12px;
   padding: 40px;
+  z-index: 999;
+  position: relative;
+
+  .close-modal {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    cursor: pointer;
+    padding: 20px;
+  }
 }
 
 form p {
@@ -44,4 +54,22 @@ label {
   display: flex;
   justify-content: space-between;
 }
-  
+
+@media (max-width: 480px) {
+  form {
+    margin-top: 50px;
+    padding: 40px 20px;
+  }
+
+  .area-input {
+    width: 100%;
+  }
+
+  .area-input-date-time {
+    flex-direction: column;
+
+    input {
+      width: 100%;
+    }
+  }
+}

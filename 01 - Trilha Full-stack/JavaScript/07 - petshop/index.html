@@ -4,16 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <script src="https://unpkg.com/imask"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
 
   <title>Agendamento Petshop</title>
-
-  <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 
 <body>
@@ -33,7 +29,7 @@
       <div class="input-wrapper">
         <div class="area-input">
           <img src="./src/assets/icons/Calendar.svg" />
-          <input type="date" name="" id="" />
+          <input type="date" id="today" />
         </div>
       </div>
     </div>
@@ -44,20 +40,7 @@
         <strong>Manhã</strong>
         <span>09h-12h</span>
       </div>
-      <ul id="period-morning" class="period">
-        <li>
-          <strong>11:00</strong>
-          <span><strong>Puppy</strong>  /  Irailda Fernandes</span>
-          <span>Vacinaçaõ</span>
-          <span>Remover agendamento</span>
-        </li>
-        <li>
-          <strong>11:00</strong>
-          <span><strong>Puppy</strong>  /  Irailda Fernandes</span>
-          <span>Banho e Tosa</span>
-          <span>Remover agendamento</span>
-        </li>
-      </ul>
+      <ul id="period-morning" class="period"></ul>
     </section>
 
     <section class="schedule-period">
@@ -66,22 +49,7 @@
         <strong>Tarde</strong>
         <span>13h-18h</span>
       </div>
-      <ul id="period-afternoon" class="period">
-        <li>
-          <strong>11:00</strong>
-          <span>Puppy / Irailda Fernandes</span>
-          <span>Banho e Tosa</span>
-          <span>Remover agendamento</span>
-          <!-- <img src="./src/assets/icons/cancel.svg" alt="Cancelar" class="cancel-icon" /> -->
-        </li>
-        <li>
-          <strong>11:00</strong>
-          <span>Puppy / Irailda Fernandes</span>
-          <span>Banho e Tosa</span>
-          <span>Remover agendamento</span>
-          <!-- <img src="./src/assets/icons/cancel.svg" alt="Cancelar" class="cancel-icon" /> -->
-        </li>
-      </ul>
+      <ul id="period-afternoon" class="period"></ul>
     </section>
 
     <section class="schedule-period">
@@ -90,22 +58,7 @@
         <strong>Noite</strong>
         <span>19h-21h</span>
       </div>
-      <ul id="period-night" class="period">
-        <li>
-          <strong>11:00</strong>
-          <span>Puppy / Irailda Fernandes</span>
-          <span>Banho e Tosa</span>
-          <span>Remover agendamento</span>
-          <!-- <img src="./src/assets/icons/cancel.svg" alt="Cancelar" class="cancel-icon" /> -->
-        </li>
-        <li>
-          <strong>11:00</strong>
-          <span>Puppy / Irailda Fernandes</span>
-          <span>Banho e Tosa</span>
-          <span>Remover agendamento</span>
-          <!-- <img src="./src/assets/icons/cancel.svg" alt="Cancelar" class="cancel-icon" /> -->
-        </li>
-      </ul>
+      <ul id="period-night" class="period"></ul>
     </section>
 
     <button>Novo Agendamento</button>
@@ -113,56 +66,59 @@
 
   <div class="container-modal">
     <form action="">
+      <img src="./src/assets/icons/cancel.svg" class="close-modal" />
       <h2>Agende um atendimento</h2>
       <p>Preencha os dados do cliente para realizar o agendamento:</p>
 
       <div class="input-wrapper">
-        <label for="">Nome do tutor</label>
+        <label for="guardianName">Nome do tutor</label>
 
         <div class="area-input">
           <img src="./src/assets/icons/User.svg" />
-          <input type="text" placeholder="Digite o nome do tutor" />
+          <input type="text" name="guardianName" id="guardianName" placeholder="Digite o nome do tutor" />
         </div>
       </div>
       <div class="input-wrapper">
-        <label for="">Nome do pet</label>
+        <label for="petName">Nome do pet</label>
 
         <div class="area-input">
           <img src="./src/assets/icons/Pet-Paw.svg" />
-          <input type="text" placeholder="Digite o nome do tutor" />
+          <input type="text" name="petName" id="petName" placeholder="Digite o nome do tutor" />
         </div>
       </div>
 
       <div class="input-wrapper">
-        <label for="">Telefone</label>
+        <label for="telephone">Telefone</label>
 
         <div class="area-input">
           <img src="./src/assets/icons/Phone.svg" />
-          <input type="text" placeholder="(00) 0 0000-0000" />
+          <input type="text" name="telephone" id="telephone" placeholder="(00) 0 0000-0000" />
         </div>
       </div>
 
       <div class="input-wrapper">
-        <label for="">Descrição do serviço</label>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Descreva o serviço"></textarea>
+        <label for="serviceDescription">Descrição do serviço</label>
+        <textarea name="serviceDescription" id="serviceDescription" cols="30" rows="10" placeholder="Descreva o serviço"></textarea>
       </div>
 
       <div class="area-input-date-time">
         <div class="input-wrapper">
-          <label for="">Data</label>
+          <label for="serviceDate">Data</label>
 
           <div class="area-input">
             <img src="./src/assets/icons/Calendar.svg" />
-            <input type="date" name="" id="" />
+            <input type="date" name="serviceDate" id="serviceDate" />
           </div>
         </div>
 
+        
         <div class="input-wrapper">
-          <label for="">Hora</label>
-
+          <label for="serviceHour">Hora</label>
+          
           <div class="area-input">
             <img src="./src/assets/icons/Clock.svg" />
-            <input type="time" name="" id="" />
+            <input type="time" min="09:00" max="21:00" name="serviceHour" id="serviceHour" list="careHours" />
+            <datalist id="careHours"></datalist>
           </div>
         </div>
       </div>
@@ -170,8 +126,6 @@
       <button>Agendar</button>
     </form>
   </div>
-
-  <script src="main.js"></script>
 </body>
 
 </html>

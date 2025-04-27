@@ -12,6 +12,7 @@
     rel="stylesheet" />
 
   <title>Agendamento Petshop</title>
+
 <link rel="icon" href="favicon.svg"><script defer src="main.js"></script></head>
 
 <body>
@@ -31,7 +32,7 @@
       <div class="input-wrapper">
         <div class="area-input">
           <img src="./src/assets/icons/Calendar.svg" />
-          <input type="date" name="" id="" />
+          <input type="date" id="today" />
         </div>
       </div>
     </div>
@@ -45,13 +46,13 @@
       <ul id="period-morning" class="period">
         <li>
           <strong>11:00</strong>
-          <span><strong>Puppy</strong>  /  Irailda Fernandes</span>
+          <span><strong>Puppy</strong> / Irailda Fernandes</span>
           <span>Vacinaçaõ</span>
           <span>Remover agendamento</span>
         </li>
         <li>
           <strong>11:00</strong>
-          <span><strong>Puppy</strong>  /  Irailda Fernandes</span>
+          <span><strong>Puppy</strong> / Irailda Fernandes</span>
           <span>Banho e Tosa</span>
           <span>Remover agendamento</span>
         </li>
@@ -115,52 +116,54 @@
       <p>Preencha os dados do cliente para realizar o agendamento:</p>
 
       <div class="input-wrapper">
-        <label for="">Nome do tutor</label>
+        <label for="guardianName">Nome do tutor</label>
 
         <div class="area-input">
           <img src="./src/assets/icons/User.svg" />
-          <input type="text" placeholder="Digite o nome do tutor" />
+          <input type="text" name="guardianName" id="guardianName" placeholder="Digite o nome do tutor" />
         </div>
       </div>
       <div class="input-wrapper">
-        <label for="">Nome do pet</label>
+        <label for="petName">Nome do pet</label>
 
         <div class="area-input">
           <img src="./src/assets/icons/Pet-Paw.svg" />
-          <input type="text" placeholder="Digite o nome do tutor" />
+          <input type="text" name="petName" id="petName" placeholder="Digite o nome do tutor" />
         </div>
       </div>
 
       <div class="input-wrapper">
-        <label for="">Telefone</label>
+        <label for="telephone">Telefone</label>
 
         <div class="area-input">
           <img src="./src/assets/icons/Phone.svg" />
-          <input type="text" placeholder="(00) 0 0000-0000" />
+          <input type="text" name="telephone" id="telephone" placeholder="(00) 0 0000-0000" />
         </div>
       </div>
 
       <div class="input-wrapper">
-        <label for="">Descrição do serviço</label>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Descreva o serviço"></textarea>
+        <label for="serviceDescription">Descrição do serviço</label>
+        <textarea name="serviceDescription" id="serviceDescription" cols="30" rows="10" placeholder="Descreva o serviço"></textarea>
       </div>
 
       <div class="area-input-date-time">
         <div class="input-wrapper">
-          <label for="">Data</label>
+          <label for="serviceDate">Data</label>
 
           <div class="area-input">
             <img src="./src/assets/icons/Calendar.svg" />
-            <input type="date" name="" id="" />
+            <input type="date" name="serviceDate" id="serviceDate" />
           </div>
         </div>
 
+        
         <div class="input-wrapper">
-          <label for="">Hora</label>
-
+          <label for="serviceHour">Hora</label>
+          
           <div class="area-input">
             <img src="./src/assets/icons/Clock.svg" />
-            <input type="time" name="" id="" />
+            <input type="time" name="serviceHour" id="serviceHour" list="careHours" />
+            <datalist id="careHours"></datalist>
           </div>
         </div>
       </div>
@@ -169,7 +172,6 @@
     </form>
   </div>
 
-  <script src="main.js"></script>
 </body>
 
 </html>

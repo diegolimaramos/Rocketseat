@@ -1,3 +1,31 @@
 {
-  "schedules": []
+  "schedules": [
+    {
+      "id": "1745784184495",
+      "guardianName": "Diego Ramos",
+      "petName": "Gordo",
+      "telephone": "(99) 9 9999-9999",
+      "serviceDescription": "Banho",
+      "serviceDate": "2025-04-27",
+      "serviceHour": "10:00"
+    },
+    {
+      "id": "1745784206618",
+      "guardianName": "Ira",
+      "petName": "Puppy",
+      "telephone": "(99) 9 9999-9999",
+      "serviceDescription": "Tosa",
+      "serviceDate": "2025-04-27",
+      "serviceHour": "15:00"
+    },
+    {
+      "id": "1745784229404",
+      "guardianName": "Ira",
+      "petName": "Puppy",
+      "telephone": "(99) 9 9999-9999",
+      "serviceDescription": "Vacinação",
+      "serviceDate": "2025-04-27",
+      "serviceHour": "21:00"
+    }
+  ]
 }
