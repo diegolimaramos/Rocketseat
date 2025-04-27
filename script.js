@@ -111,7 +111,7 @@ const projects = [
     "preview": "./01 - Trilha Full-stack/JavaScript/07 - petshop/index.html",
     "img": "./01 - Trilha Full-stack/JavaScript/07 - petshop/src/assets/preview.png",
     "stacks": ["html", "css", "javascript"],
-    "projectStatus": "inProgress",
+    "projectStatus": "complete",
   },
 ]
 

@@ -112,7 +112,8 @@ a {
   .card.inProgress, 
   .card.stoped {
     pointer-events: none;
-    filter: saturate(0%);
+    filter: blur(3px)
+    opacity(50%);
   }
 }
 
